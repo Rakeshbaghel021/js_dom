@@ -38,6 +38,25 @@
     const h1 = document.getElementsByTagName("h1")[0];
     const p = document.getElementsByTagName("p")[0];
     const ul = document.getElementsByTagName("ul")[0];
+
     // Your code goes here
+     const p = document.getElementsByTagName("p")[0];
+    const ul = document.getElementsByTagName("ul")[0];
+    // Your code goes here
+
+    // change the background color of the first `li` in the `ul`.
+    document.body.children[3].children[0].style.backgroundColor="brown";
+
+    // change the background color of all the `li` in `ul`.
+    var change = document.body.children[3].children;
+    for(let i=0; i<change.length; i++) {
+    change[i].style.backgroundColor = "orange";  
+  }
+  // Access `li` node
+  document.body.children[3].childNodes[5].style.backgroundColor='pink';
+
+   // Select the middle element `li`
+   document.body.children[3].childNodes[3];
+
   </script>
 </html>
