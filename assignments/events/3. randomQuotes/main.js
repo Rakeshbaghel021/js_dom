@@ -1,8 +1,14 @@
-var quotes;
-
-// Write your code here
 
 
+function newQuote() {
+    var randomNum=Math.floor((Math.random()* quotes.length));
+    document.getElementById("quoteDisplay").innerHTML = quotes[randomNum].quoteText;
+    document.getElementById("quoteAuthor").innerHTML = quotes[randomNum].quoteAuthor;
+
+
+}
+
+document.getElementById("click").addEventListener("click",newQuote);
 
 quotes = [
     {

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>mouse</title>
+</head>
+<body>
+     <h1>Mouse move cursor</h1>
+      <p id="screenx"></p>
+      <p id="screeny"></p>
+      <p id="clientx"></p>
+      <p id="clienty"></p>
+     
+
+
+	<script>
+		function mouse() {
+			var x=event.screenX;
+			var y=event.screenY;
+			var a=event.clientX;
+			var b=event.clientY;
+			document.getElementById("screenx").innerText=x;
+			document.getElementById("screeny").innerText=y;
+			document.getElementById("clientx").innerText=a;
+			document.getElementById("clienty").innerText=b;
+		}
+		document.addEventListener("mousemove",mouse);
+
+	</script>
+
+</body>
+</html>
